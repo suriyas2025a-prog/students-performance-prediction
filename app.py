@@ -5,8 +5,8 @@ import numpy as np
 st.title("🎓 Student Performance Prediction")
 
 # Corrected file paths
-model = joblib.load("student_model.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("model/student_model.pkl")
+scaler = joblib.load("model/scaler.pkl")
 
 study_time = st.slider("Study Time (hours)", 0, 10)
 absences = st.slider("Absences", 0, 30)
